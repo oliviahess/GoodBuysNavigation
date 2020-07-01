@@ -13,6 +13,8 @@
 		F47CE1B624AA80BB0067B657 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47CE1B524AA80BB0067B657 /* Assets.xcassets */; };
 		F47CE1B924AA80BB0067B657 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47CE1B724AA80BB0067B657 /* LaunchScreen.storyboard */; };
 		F4B7E82B24ABB4B300510C8C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B7E82A24ABB4B300510C8C /* SearchViewController.swift */; };
+		F4B7E84D24ACF7F600510C8C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B7E84C24ACF7F600510C8C /* CollectionViewCell.swift */; };
+		F4B7E84F24ACF98A00510C8C /* CollectionResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B7E84E24ACF98A00510C8C /* CollectionResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		F47CE1B824AA80BB0067B657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47CE1BA24AA80BB0067B657 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B7E82A24ABB4B300510C8C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F4B7E84C24ACF7F600510C8C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		F4B7E84E24ACF98A00510C8C /* CollectionResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +63,9 @@
 				F47CE1AE24AA80B90067B657 /* AppDelegate.swift */,
 				F47CE1B024AA80BA0067B657 /* ViewController.swift */,
 				F4B7E82A24ABB4B300510C8C /* SearchViewController.swift */,
+				F4B7E84C24ACF7F600510C8C /* CollectionViewCell.swift */,
 				F47CE1B224AA80BA0067B657 /* Main.storyboard */,
+				F4B7E84E24ACF98A00510C8C /* CollectionResultsViewController.swift */,
 				F47CE1B524AA80BB0067B657 /* Assets.xcassets */,
 				F47CE1B724AA80BB0067B657 /* LaunchScreen.storyboard */,
 				F47CE1BA24AA80BB0067B657 /* Info.plist */,
@@ -140,6 +146,8 @@
 			files = (
 				F4B7E82B24ABB4B300510C8C /* SearchViewController.swift in Sources */,
 				F47CE1B124AA80BA0067B657 /* ViewController.swift in Sources */,
+				F4B7E84D24ACF7F600510C8C /* CollectionViewCell.swift in Sources */,
+				F4B7E84F24ACF98A00510C8C /* CollectionResultsViewController.swift in Sources */,
 				F47CE1AF24AA80B90067B657 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
