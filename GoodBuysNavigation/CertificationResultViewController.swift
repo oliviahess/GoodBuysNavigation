@@ -9,12 +9,6 @@
 import Foundation
 import UIKit
 
-protocol CertificationResultViewControllerDelegate {
-    
-}
-
-
-
 class CertificationResultsViewController: UIViewController {
     
     @IBOutlet weak var certificationImageView: UIImageView!
@@ -23,9 +17,6 @@ class CertificationResultsViewController: UIViewController {
     
     var certificationText: String?
     var certificationImage: UIImage?
-    
-    //weak var delegate: CertificationResultViewControllerDelegate?
-    
     
     override func viewWillAppear(_ animated: Bool) {
         certificationTextView.text = certificationText

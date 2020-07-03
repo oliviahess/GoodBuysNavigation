@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CollectionResultsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, CertificationResultViewControllerDelegate {
+class CollectionResultsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     let items = ["1","2", "3", "4", "5", "6", "7","12", "23", "24", "35", "46", "71","72", "73", "47", "75", "76", "77","72", "73", "74", "75", "76"];
     //initialize with names of images
     let images: [UIImage] = [
@@ -70,9 +70,6 @@ class CollectionResultsViewController: UIViewController, UICollectionViewDelegat
         certificationVC.certificationImage = images[indexPath.item]
         navigationController?.pushViewController(certificationVC, animated: true)
        
-        
-   //         NotificationCenter.default.post(name: NSNotification.Name("collectionButtonPressed"), object: nil)
-        
     }
     
     
