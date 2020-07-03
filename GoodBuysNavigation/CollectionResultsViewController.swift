@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class CollectionResultsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class CollectionResultsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, CertificationResultViewControllerDelegate {
     let items = ["1","2", "3", "4", "5", "6", "7","12", "23", "24", "35", "46", "71","72", "73", "47", "75", "76", "77","72", "73", "74", "75", "76"];
     //initialize with names of images
     let images: [UIImage] = [
@@ -45,7 +45,7 @@ class CollectionResultsViewController: UIViewController, UICollectionViewDelegat
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -59,7 +59,19 @@ class CollectionResultsViewController: UIViewController, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-             print(indexPath.item);
+        
+        print(indexPath.item);
+
+        guard let certificationVC = storyboard?.instantiateViewController(withIdentifier: "CertificationResults") as? CertificationResultsViewController else {
+            fatalError("Failed to load CertificationResultsViewController from storyboard.")
+        }
+    
+        certificationVC.certificationText = "This will include the content for the description of the certification"
+        certificationVC.certificationImage = images[indexPath.item]
+        navigationController?.pushViewController(certificationVC, animated: true)
+       
+        
+   //         NotificationCenter.default.post(name: NSNotification.Name("collectionButtonPressed"), object: nil)
         
     }
     

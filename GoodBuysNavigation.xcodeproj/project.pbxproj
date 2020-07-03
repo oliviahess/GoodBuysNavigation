@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4547ED524AFBB5F00F63465 /* CertificationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4547ED424AFBB5F00F63465 /* CertificationResultViewController.swift */; };
 		F47CE1AF24AA80B90067B657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CE1AE24AA80B90067B657 /* AppDelegate.swift */; };
 		F47CE1B124AA80BA0067B657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CE1B024AA80BA0067B657 /* ViewController.swift */; };
 		F47CE1B424AA80BA0067B657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47CE1B224AA80BA0067B657 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F4547ED424AFBB5F00F63465 /* CertificationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationResultViewController.swift; sourceTree = "<group>"; };
 		F47CE1AB24AA80B90067B657 /* GoodBuysNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodBuysNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47CE1AE24AA80B90067B657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47CE1B024AA80BA0067B657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				F4B7E84C24ACF7F600510C8C /* CollectionViewCell.swift */,
 				F47CE1B224AA80BA0067B657 /* Main.storyboard */,
 				F4B7E84E24ACF98A00510C8C /* CollectionResultsViewController.swift */,
+				F4547ED424AFBB5F00F63465 /* CertificationResultViewController.swift */,
 				F47CE1B524AA80BB0067B657 /* Assets.xcassets */,
 				F47CE1B724AA80BB0067B657 /* LaunchScreen.storyboard */,
 				F47CE1BA24AA80BB0067B657 /* Info.plist */,
@@ -146,6 +149,7 @@
 			files = (
 				F4B7E82B24ABB4B300510C8C /* SearchViewController.swift in Sources */,
 				F47CE1B124AA80BA0067B657 /* ViewController.swift in Sources */,
+				F4547ED524AFBB5F00F63465 /* CertificationResultViewController.swift in Sources */,
 				F4B7E84D24ACF7F600510C8C /* CollectionViewCell.swift in Sources */,
 				F4B7E84F24ACF98A00510C8C /* CollectionResultsViewController.swift in Sources */,
 				F47CE1AF24AA80B90067B657 /* AppDelegate.swift in Sources */,
