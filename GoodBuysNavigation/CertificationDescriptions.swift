@@ -9,7 +9,111 @@
 import UIKit
 
 class CertificationDescriptions: NSObject {
-
+//    UIImage(named: "betterCotton")!,
+//    UIImage(named: "bluesign")!,
+//    UIImage(named: "canopy")!,
+//    UIImage(named: "carbonTrust")!,
+//    UIImage(named: "caregora")!,
+//    UIImage(named: "ccba")!,
+//    UIImage(named: "cleanClothes")!,
+//    UIImage(named: "crueltyFree")!,
+//    UIImage(named: "ethicalTrading")!,
+//    UIImage(named: "fairmined")!,
+//    UIImage(named: "fairTrade")!,
+//    UIImage(named: "labourOrg")!,
+//    UIImage(named: "lwgStandards")!,
+//    UIImage(named: "organic")!,
+//    UIImage(named: "rds")!,
+//    UIImage(named: "recycled")!,
+//    UIImage(named: "rws")!,
+//    UIImage(named: "socialAccountability")!,
+//    UIImage(named: "soilAssociation")!,
+//    UIImage(named: "swan")!,
+//    UIImage(named: "vegan")!,
+//    UIImage(named: "vegetarian")!,
+//    UIImage(named: "workplaceConditions")!,
+//    UIImage(named: "wrap")!
+//
+    
+    public func getCertDescription(functionName: String)->String {
+        if(functionName == "betterCotton" ){
+            return betterCotton
+        }
+        if(functionName == "bluesign" ){
+            return blueSign
+        }
+        if(functionName == "canopy" ){
+            return canopyStyle
+        }
+        if(functionName == "carbonTrust" ){
+            return carbonTrust
+        }
+        if(functionName == "caregora" ){
+            return careGora
+        }
+        if(functionName == "ccba" ){
+            return CCB
+        }
+        if(functionName == "cleanClothes" ){
+            return cleanClothes
+        }
+        if(functionName == "crueltyFree" ){
+            return ""
+        }
+        if(functionName == "ethicalTrading" ){
+            return ""
+        }
+        if(functionName == "fairmined" ){
+            return ""
+        }
+        
+        if(functionName == "fairTrade" ){
+            return fairTrade
+        }
+        if(functionName == "labourOrg" ){
+            return ""
+        }
+        if(functionName == "lwgStandards" ){
+            return leatherWorkingGroup
+        }
+        if(functionName == "organic" ){
+            return ""
+        }
+        if(functionName == "rds" ){
+            return responsibleDown
+        }
+        if(functionName == "rws" ){
+            return responsibleWool
+        }
+        if(functionName == "socialAccountability" ){
+            return sa800
+        }
+        if(functionName == "soilAssociation" ){
+            return soilOrganic
+        }
+        if(functionName == "swan" ){
+            return nordicSwan
+        }
+        if(functionName == "vegan" ){
+            return ""
+        }
+        
+        if(functionName == "wrap" ){
+            return wrap
+        }
+        
+        if(functionName == "vegetarian" ){
+            return ""
+        }
+        if(functionName == "workplaceConditions" ){
+            return workplaceCondition
+        }
+        else {
+            return "No information available for this certification"
+        }
+    }
+    
+    
     public let fairTrade = "If a company is FairTrade, it is required to pay sustainable prices (which must never fall lower than the market price), Fairtrade addresses the injustices of conventional trade, which traditionally discriminates against the poorest, weakest producers. It enables them to improve their position and have more control over their lives."
 
     public let betterCotton = "The Better Cotton Initiative exists to make global cotton production better for the people who produce it, better for the environment it grows in, and better for the sector’s future. BCI connects people and organisations from across the cotton sector, from field to store, to promote measurable and continuing improvements for the environment, farming communities and the economies of cotton-producing areas."

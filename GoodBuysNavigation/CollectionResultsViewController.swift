@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class CollectionResultsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     let items = ["1","2", "3", "4", "5", "6", "7","12", "23", "24", "35", "46", "71","72", "73", "47", "75", "76", "77","72", "73", "74", "75", "76"];
     //initialize with names of images
@@ -37,6 +38,33 @@ class CollectionResultsViewController: UIViewController, UICollectionViewDelegat
         UIImage(named: "vegetarian")!,
         UIImage(named: "workplaceConditions")!,
         UIImage(named: "wrap")!
+    ]
+    
+    let imageString: [String] = [
+        "betterCotton",
+        "bluesign",
+        "canopy",
+       "carbonTrust",
+        "caregora",
+        "ccba",
+        "cleanClothes",
+        "crueltyFree",
+        "ethicalTrading",
+        "fairmined",
+        "fairTrade",
+        "labourOrg",
+        "lwgStandards",
+        "organic",
+        "rds",
+        "recycled",
+        "rws",
+        "socialAccountability",
+        "soilAssociation",
+        "swan",
+        "vegan",
+        "vegetarian",
+        "workplaceConditions",
+        "wrap"
         
     ]
     
@@ -68,6 +96,11 @@ class CollectionResultsViewController: UIViewController, UICollectionViewDelegat
     
         certificationVC.certificationText = "This will include the content for the description of the certification"
         certificationVC.certificationImage = images[indexPath.item]
+        let certName = imageString[indexPath.item]
+        var certDescription = CertificationDescriptions().getCertDescription(functionName: certName)
+        certificationVC.certificationText = certDescription
+        
+        
         navigationController?.pushViewController(certificationVC, animated: true)
        
     }
