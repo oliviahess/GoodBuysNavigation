@@ -33,6 +33,38 @@
             endingLineNumber = "71"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoodBuysNavigation.CollectionResultsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; GoodBuysNavigation.CollectionResultsViewController"
+                  moduleName = "GoodBuysNavigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oliviahess/programming/GoodBuys/GoodBuysNavigation/GoodBuysNavigation/CollectionResultsViewController.swift"
+                  timestampString = "615843046.403017"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "7609">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoodBuysNavigation.CollectionResultsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;GoodBuysNavigation.CollectionResultsViewController&gt;"
+                  moduleName = "GoodBuysNavigation"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/oliviahess/programming/GoodBuys/GoodBuysNavigation/GoodBuysNavigation/CollectionResultsViewController.swift"
+                  timestampString = "615843046.404845"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "7505">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
