@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F431320824C7536500C0014E /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431320724C7536500C0014E /* QRScannerViewController.swift */; };
 		F4547ED524AFBB5F00F63465 /* CertificationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4547ED424AFBB5F00F63465 /* CertificationResultViewController.swift */; };
 		F4547EDF24B4EAB000F63465 /* CollectionResultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4547EDE24B4EAB000F63465 /* CollectionResultsExtension.swift */; };
 		F4547EE124B4EDF300F63465 /* CertificationDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4547EE024B4EDF300F63465 /* CertificationDescriptions.swift */; };
+		F47393A224C64C1300B0350B /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47393A124C64C1300B0350B /* QRScannerView.swift */; };
 		F47CE1AF24AA80B90067B657 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CE1AE24AA80B90067B657 /* AppDelegate.swift */; };
 		F47CE1B124AA80BA0067B657 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CE1B024AA80BA0067B657 /* ViewController.swift */; };
 		F47CE1B424AA80BA0067B657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47CE1B224AA80BA0067B657 /* Main.storyboard */; };
@@ -21,9 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F431320724C7536500C0014E /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
 		F4547ED424AFBB5F00F63465 /* CertificationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationResultViewController.swift; sourceTree = "<group>"; };
 		F4547EDE24B4EAB000F63465 /* CollectionResultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionResultsExtension.swift; sourceTree = "<group>"; };
 		F4547EE024B4EDF300F63465 /* CertificationDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationDescriptions.swift; sourceTree = "<group>"; };
+		F47393A124C64C1300B0350B /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		F47CE1AB24AA80B90067B657 /* GoodBuysNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodBuysNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47CE1AE24AA80B90067B657 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47CE1B024AA80BA0067B657 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				F4B7E84C24ACF7F600510C8C /* CollectionViewCell.swift */,
 				F47CE1B224AA80BA0067B657 /* Main.storyboard */,
 				F4547EE024B4EDF300F63465 /* CertificationDescriptions.swift */,
+				F431320724C7536500C0014E /* QRScannerViewController.swift */,
+				F47393A124C64C1300B0350B /* QRScannerView.swift */,
 				F4B7E84E24ACF98A00510C8C /* CollectionResultsViewController.swift */,
 				F4547EDE24B4EAB000F63465 /* CollectionResultsExtension.swift */,
 				F4547ED424AFBB5F00F63465 /* CertificationResultViewController.swift */,
@@ -153,10 +159,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F431320824C7536500C0014E /* QRScannerViewController.swift in Sources */,
 				F4B7E82B24ABB4B300510C8C /* SearchViewController.swift in Sources */,
 				F47CE1B124AA80BA0067B657 /* ViewController.swift in Sources */,
 				F4547ED524AFBB5F00F63465 /* CertificationResultViewController.swift in Sources */,
 				F4547EDF24B4EAB000F63465 /* CollectionResultsExtension.swift in Sources */,
+				F47393A224C64C1300B0350B /* QRScannerView.swift in Sources */,
 				F4B7E84D24ACF7F600510C8C /* CollectionViewCell.swift in Sources */,
 				F4547EE124B4EDF300F63465 /* CertificationDescriptions.swift in Sources */,
 				F4B7E84F24ACF98A00510C8C /* CollectionResultsViewController.swift in Sources */,
@@ -309,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BYE5362W3;
 				INFOPLIST_FILE = GoodBuysNavigation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +336,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BYE5362W3;
 				INFOPLIST_FILE = GoodBuysNavigation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

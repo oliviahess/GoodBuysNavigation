@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +17,51 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oh-Zm-Ebw">
+                                <rect key="frame" x="0.0" y="210" width="375" height="39"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOOD BUYS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BmF-Vg-qRn">
+                                <rect key="frame" x="0.0" y="266" width="375" height="61"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="GoodBuys" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-ct-kjM">
+                                <rect key="frame" x="161" y="608" width="53" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Dtx-a5-qdW"/>
+                                    <constraint firstAttribute="width" constant="53" id="FzM-3K-eOM"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70196078431372544" green="0.027450980392156862" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="BmF-Vg-qRn" firstAttribute="top" secondItem="7oh-Zm-Ebw" secondAttribute="bottom" constant="17" id="1o8-gZ-aFj"/>
+                            <constraint firstItem="BmF-Vg-qRn" firstAttribute="top" secondItem="7oh-Zm-Ebw" secondAttribute="bottom" constant="17" id="380-1L-Lpa"/>
+                            <constraint firstItem="7oh-Zm-Ebw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="3O1-Ip-ziZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rtf-ct-kjM" secondAttribute="trailing" constant="161" id="Ja7-Gv-tfi"/>
+                            <constraint firstItem="7oh-Zm-Ebw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ud0-h9-qci"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rtf-ct-kjM" secondAttribute="bottom" constant="20" id="VJc-gQ-ysG"/>
+                            <constraint firstItem="BmF-Vg-qRn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ai0-yX-Q3A"/>
+                            <constraint firstItem="rtf-ct-kjM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="oOp-BH-EDF"/>
+                            <constraint firstItem="rtf-ct-kjM" firstAttribute="top" secondItem="BmF-Vg-qRn" secondAttribute="bottom" constant="281" id="qTR-VV-F0c"/>
+                            <constraint firstItem="7oh-Zm-Ebw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qzm-dE-Z3y"/>
+                            <constraint firstItem="BmF-Vg-qRn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uNv-8V-iwA"/>
+                            <constraint firstItem="rtf-ct-kjM" firstAttribute="top" secondItem="BmF-Vg-qRn" secondAttribute="bottom" constant="281" id="zD6-Sm-ZKs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GoodBuys" width="138" height="102"/>
+    </resources>
 </document>

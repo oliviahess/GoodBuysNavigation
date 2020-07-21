@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SCAN-->
         <scene sceneID="hjR-bE-50v">
             <objects>
-                <viewController id="qPl-jZ-1bY" sceneMemberID="viewController">
+                <viewController id="qPl-jZ-1bY" customClass="QRScannerViewController" customModule="GoodBuysNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rW4-nY-4av">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,15 +23,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Button A"/>
-                                <connections>
-                                    <segue destination="1cf-Xv-6Un" kind="show" id="RfH-F4-0w6"/>
-                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scan" translatesAutoresizingMaskIntoConstraints="NO" id="hDF-jW-EXf">
+                                <rect key="frame" x="75" y="296" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.76913839969999998" green="0.96620899439999997" blue="0.85702868379999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ZU4-cx-dMZ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sqF-Zx-FzG"/>
+                    <navigationItem key="navigationItem" title="SCAN" id="sqF-Zx-FzG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahH-f3-yqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -45,6 +46,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.76913839969999998" green="0.96620899439999997" blue="0.85702868379999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.64705882349999999" green="0.14117647059999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Sfu-kD-T5t" kind="relationship" relationship="viewControllers" id="MQ8-Ft-pcF"/>
@@ -56,17 +58,17 @@
             </objects>
             <point key="canvasLocation" x="650" y="-277"/>
         </scene>
-        <!--Search View Controller-->
+        <!--SEARCH-->
         <scene sceneID="YTJ-Ug-rhb">
             <objects>
                 <viewController id="B9b-l3-9ZD" customClass="SearchViewController" customModule="GoodBuysNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DHl-Gs-0N7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.76913839969999998" green="0.96620899439999997" blue="0.85702868379999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Mid-bI-hLB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cs6-Wh-avn"/>
+                    <navigationItem key="navigationItem" title="SEARCH" id="cs6-Wh-avn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aEe-eI-jDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,11 +78,14 @@
         <scene sceneID="A36-S9-K0a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sfu-kD-T5t" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Teb-x7-cfI"/>
+                    <tabBarItem key="tabBarItem" systemItem="favorites" id="Teb-x7-cfI">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CX9-4Q-Dtb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.64705882349999999" green="0.14117647059999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -91,26 +96,26 @@
             </objects>
             <point key="canvasLocation" x="2184.8000000000002" y="-1346.176911544228"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--SEARCH-->
         <scene sceneID="3WZ-nG-eCV">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Kx-9d-cti" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="O0S-A1-0Lr"/>
+                <navigationController title="SEARCH" automaticallyAdjustsScrollViewInsets="NO" id="2Kx-9d-cti" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="O0S-A1-0Lr">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8G4-G6-m4s">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.64705882349999999" green="0.14117647059999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="B9b-l3-9ZD" kind="relationship" relationship="rootViewController" id="H4g-Nq-pa2"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o4A-hM-97Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2184.8000000000002" y="-587.85607196401804"/>
         </scene>
-        <!--Collection Results View Controller-->
+        <!--CERTIFICATIONS-->
         <scene sceneID="f8O-ZQ-d5U">
             <objects>
                 <viewController id="8p6-7v-n2J" customClass="CollectionResultsViewController" customModule="GoodBuysNavigation" customModuleProvider="target" sceneMemberID="viewController">
@@ -157,7 +162,7 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.76913839969999998" green="0.96620899439999997" blue="0.85702868379999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.64705882349999999" green="0.14117647059999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xXi-Hv-gGh" firstAttribute="top" secondItem="mjJ-Ao-R2S" secondAttribute="top" id="5fb-oY-jPb"/>
                             <constraint firstItem="xXi-Hv-gGh" firstAttribute="trailing" secondItem="mjJ-Ao-R2S" secondAttribute="trailing" id="7CV-fC-JFk"/>
@@ -170,13 +175,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mjJ-Ao-R2S"/>
                     </view>
-                    <navigationItem key="navigationItem" id="E2j-fN-OKb"/>
+                    <navigationItem key="navigationItem" title="CERTIFICATIONS" id="E2j-fN-OKb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyv-l8-fUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3124" y="195"/>
         </scene>
-        <!--Certification Results View Controller-->
+        <!--CERTIFICATIONS-->
         <scene sceneID="sCL-bb-BAG">
             <objects>
                 <viewController storyboardIdentifier="CertificationResults" id="Dig-kS-EPz" customClass="CertificationResultsViewController" customModule="GoodBuysNavigation" customModuleProvider="target" sceneMemberID="viewController">
@@ -184,37 +189,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA1-OD-9Xx">
-                                <rect key="frame" x="123" y="101" width="128" height="84"/>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGr-Gd-L0i">
-                                <rect key="frame" x="67" y="214" width="240" height="326"/>
+                                <rect key="frame" x="67" y="257" width="240" height="313"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="326" id="Mk9-dU-bvy"/>
+                                    <constraint firstAttribute="height" constant="313" id="HPI-oX-AfY"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </string>
                                 <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIG-ha-FXX">
+                                <rect key="frame" x="166.5" y="213" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8C-p8-CKQ">
+                                <rect key="frame" x="164.5" y="601" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA1-OD-9Xx">
+                                <rect key="frame" x="145" y="105" width="85" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="SXJ-eW-0B0"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yGr-Gd-L0i" firstAttribute="top" secondItem="KA1-OD-9Xx" secondAttribute="bottom" constant="29" id="KZh-yE-btZ"/>
-                            <constraint firstItem="KA1-OD-9Xx" firstAttribute="leading" secondItem="DFc-Kb-T5v" secondAttribute="leading" constant="123" id="TQB-oP-Tih"/>
+                            <constraint firstItem="DFc-Kb-T5v" firstAttribute="bottom" secondItem="K8C-p8-CKQ" secondAttribute="bottom" constant="36" id="Ehk-2h-IwP"/>
+                            <constraint firstItem="KA1-OD-9Xx" firstAttribute="leading" secondItem="DFc-Kb-T5v" secondAttribute="leading" constant="145" id="TQB-oP-Tih"/>
+                            <constraint firstItem="KA1-OD-9Xx" firstAttribute="centerX" secondItem="YIG-ha-FXX" secondAttribute="centerX" id="VqE-FC-GO1"/>
                             <constraint firstItem="yGr-Gd-L0i" firstAttribute="leading" secondItem="DFc-Kb-T5v" secondAttribute="leading" constant="67" id="X3d-Td-46c"/>
+                            <constraint firstItem="yGr-Gd-L0i" firstAttribute="top" secondItem="YIG-ha-FXX" secondAttribute="bottom" constant="23" id="YoK-sm-FFk"/>
                             <constraint firstItem="DFc-Kb-T5v" firstAttribute="trailing" secondItem="yGr-Gd-L0i" secondAttribute="trailing" constant="68" id="eET-61-owT"/>
-                            <constraint firstItem="KA1-OD-9Xx" firstAttribute="centerX" secondItem="yGr-Gd-L0i" secondAttribute="centerX" id="em5-9i-PBf"/>
-                            <constraint firstItem="KA1-OD-9Xx" firstAttribute="top" secondItem="DFc-Kb-T5v" secondAttribute="top" constant="37" id="gBv-Oa-wG9"/>
-                            <constraint firstItem="DFc-Kb-T5v" firstAttribute="bottom" secondItem="yGr-Gd-L0i" secondAttribute="bottom" constant="127" id="rtg-86-3hh"/>
-                            <constraint firstItem="yGr-Gd-L0i" firstAttribute="top" secondItem="KA1-OD-9Xx" secondAttribute="bottom" constant="29" id="wUR-Px-ngY"/>
+                            <constraint firstItem="DFc-Kb-T5v" firstAttribute="trailing" secondItem="KA1-OD-9Xx" secondAttribute="trailing" constant="145" id="efS-1N-FcD"/>
+                            <constraint firstItem="KA1-OD-9Xx" firstAttribute="centerX" secondItem="K8C-p8-CKQ" secondAttribute="centerX" id="fVn-AZ-GCi"/>
+                            <constraint firstItem="YIG-ha-FXX" firstAttribute="top" secondItem="KA1-OD-9Xx" secondAttribute="bottom" constant="24" id="fhp-EE-BT2"/>
+                            <constraint firstItem="KA1-OD-9Xx" firstAttribute="leading" secondItem="DFc-Kb-T5v" secondAttribute="leading" constant="145" id="omU-vI-J00"/>
+                            <constraint firstItem="K8C-p8-CKQ" firstAttribute="top" secondItem="yGr-Gd-L0i" secondAttribute="bottom" constant="31" id="pN6-um-jcU"/>
+                            <constraint firstItem="KA1-OD-9Xx" firstAttribute="top" secondItem="DFc-Kb-T5v" secondAttribute="top" constant="41" id="seR-ZC-nrQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DFc-Kb-T5v"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Phm-ee-fs8"/>
+                    <navigationItem key="navigationItem" title="CERTIFICATIONS" id="Phm-ee-fs8"/>
                     <connections>
                         <outlet property="certificationImageView" destination="KA1-OD-9Xx" id="nfy-EX-8xu"/>
                         <outlet property="certificationTextView" destination="yGr-Gd-L0i" id="5is-gq-1ba"/>
@@ -224,15 +246,18 @@
             </objects>
             <point key="canvasLocation" x="5079.1999999999998" y="194.75262368815595"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--EcoLabels-->
         <scene sceneID="LSr-kJ-v0U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ur2-1H-lW3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="recents" id="Rp1-hL-bgh"/>
+                    <tabBarItem key="tabBarItem" title="EcoLabels" id="Rp1-hL-bgh">
+                        <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MNU-8L-uXk">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.64705882349999999" green="0.14117647059999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -243,16 +268,16 @@
             </objects>
             <point key="canvasLocation" x="2185" y="195"/>
         </scene>
-        <!--Collection Results Extension-->
+        <!--CERTIFICATIONS-->
         <scene sceneID="glx-iE-VaV">
             <objects>
-                <viewController id="1cf-Xv-6Un" customClass="CollectionResultsExtension" customModule="GoodBuysNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CollectionCertResults" id="1cf-Xv-6Un" customClass="CollectionResultsExtension" customModule="GoodBuysNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PzB-0Z-44A">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W1i-8d-aJA">
-                                <rect key="frame" x="0.0" y="186" width="375" height="432"/>
+                                <rect key="frame" x="0.0" y="186" width="375" height="481"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sq4-n6-h5x">
                                     <size key="itemSize" width="83" height="82"/>
@@ -302,7 +327,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.76913839969999998" green="0.96620899439999997" blue="0.85702868379999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7Ko-tF-nXM" firstAttribute="leading" secondItem="PQ7-fj-g7o" secondAttribute="leading" id="0AP-wu-W72"/>
                             <constraint firstItem="MAW-GC-G5A" firstAttribute="trailing" secondItem="PQ7-fj-g7o" secondAttribute="trailing" id="34o-gk-dGg"/>
@@ -321,7 +346,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQ7-fj-g7o"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2aa-Vb-oEy"/>
+                    <navigationItem key="navigationItem" title="CERTIFICATIONS" id="2aa-Vb-oEy"/>
                     <connections>
                         <outlet property="companyName" destination="MAW-GC-G5A" id="XKx-I2-iLp"/>
                         <outlet property="parentCompanyName" destination="7Ko-tF-nXM" id="FqC-At-VVS"/>
@@ -329,7 +354,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e68-de-93p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4181.6000000000004" y="-1346.176911544228"/>
+            <point key="canvasLocation" x="5479.1999999999998" y="-1346.176911544228"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FNq-vs-tC3">
@@ -339,6 +364,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cd5-bd-Ysz">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.64705882349999999" green="0.14117647059999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -349,5 +375,27 @@
             </objects>
             <point key="canvasLocation" x="4140" y="194.75262368815595"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8vL-d4-Sj1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0cT-uW-pLQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oQg-5b-Bjw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.64705882349999999" green="0.14117647059999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1cf-Xv-6Un" kind="relationship" relationship="rootViewController" id="nx2-2c-3Nj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FJ5-ul-EkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4540" y="-1346.176911544228"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="scan" width="980" height="980"/>
+    </resources>
 </document>
