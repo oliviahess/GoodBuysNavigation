@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F431320824C7536500C0014E /* QRScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431320724C7536500C0014E /* QRScannerViewController.swift */; };
+		F431320F24C75CDF00C0014E /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = F431320E24C75CDF00C0014E /* TFHpple.m */; };
+		F431321124C75CEE00C0014E /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = F431321024C75CEE00C0014E /* TFHppleElement.m */; };
+		F431321524C75D2800C0014E /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = F431321424C75D2800C0014E /* XPathQuery.m */; };
+		F431321A24C76B2F00C0014E /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F431321924C76B2F00C0014E /* libxml2.2.tbd */; };
 		F4547ED524AFBB5F00F63465 /* CertificationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4547ED424AFBB5F00F63465 /* CertificationResultViewController.swift */; };
 		F4547EDF24B4EAB000F63465 /* CollectionResultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4547EDE24B4EAB000F63465 /* CollectionResultsExtension.swift */; };
 		F4547EE124B4EDF300F63465 /* CertificationDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4547EE024B4EDF300F63465 /* CertificationDescriptions.swift */; };
@@ -24,6 +28,15 @@
 
 /* Begin PBXFileReference section */
 		F431320724C7536500C0014E /* QRScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerViewController.swift; sourceTree = "<group>"; };
+		F431320C24C75CC200C0014E /* TFHpple.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		F431320D24C75CDF00C0014E /* GoodBuysNavigation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoodBuysNavigation-Bridging-Header.h"; sourceTree = "<group>"; };
+		F431320E24C75CDF00C0014E /* TFHpple.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		F431321024C75CEE00C0014E /* TFHppleElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		F431321224C75D0100C0014E /* TFHppleElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		F431321324C75D0D00C0014E /* XPathQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		F431321424C75D2800C0014E /* XPathQuery.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		F431321724C76A5800C0014E /* TFHpple */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TFHpple; path = GoodBuysNavigation/TFHpple; sourceTree = "<group>"; };
+		F431321924C76B2F00C0014E /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 		F4547ED424AFBB5F00F63465 /* CertificationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationResultViewController.swift; sourceTree = "<group>"; };
 		F4547EDE24B4EAB000F63465 /* CollectionResultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionResultsExtension.swift; sourceTree = "<group>"; };
 		F4547EE024B4EDF300F63465 /* CertificationDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationDescriptions.swift; sourceTree = "<group>"; };
@@ -45,17 +58,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F431321A24C76B2F00C0014E /* libxml2.2.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F431320924C75C6B00C0014E /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				F431320C24C75CC200C0014E /* TFHpple.h */,
+				F431320E24C75CDF00C0014E /* TFHpple.m */,
+				F431321024C75CEE00C0014E /* TFHppleElement.m */,
+				F431321224C75D0100C0014E /* TFHppleElement.h */,
+				F431321324C75D0D00C0014E /* XPathQuery.h */,
+				F431321424C75D2800C0014E /* XPathQuery.m */,
+				F431320D24C75CDF00C0014E /* GoodBuysNavigation-Bridging-Header.h */,
+			);
+			path = TFHpple;
+			sourceTree = "<group>";
+		};
+		F431321624C76A5800C0014E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F431321924C76B2F00C0014E /* libxml2.2.tbd */,
+				F431321724C76A5800C0014E /* TFHpple */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F47CE1A224AA80B90067B657 = {
 			isa = PBXGroup;
 			children = (
 				F47CE1AD24AA80B90067B657 /* GoodBuysNavigation */,
 				F47CE1AC24AA80B90067B657 /* Products */,
+				F431321624C76A5800C0014E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +108,7 @@
 		F47CE1AD24AA80B90067B657 /* GoodBuysNavigation */ = {
 			isa = PBXGroup;
 			children = (
+				F431320924C75C6B00C0014E /* TFHpple */,
 				F47CE1AE24AA80B90067B657 /* AppDelegate.swift */,
 				F47CE1B024AA80BA0067B657 /* ViewController.swift */,
 				F4B7E82A24ABB4B300510C8C /* SearchViewController.swift */,
@@ -120,6 +159,7 @@
 				TargetAttributes = {
 					F47CE1AA24AA80B90067B657 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -159,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F431321124C75CEE00C0014E /* TFHppleElement.m in Sources */,
 				F431320824C7536500C0014E /* QRScannerViewController.swift in Sources */,
 				F4B7E82B24ABB4B300510C8C /* SearchViewController.swift in Sources */,
 				F47CE1B124AA80BA0067B657 /* ViewController.swift in Sources */,
@@ -166,8 +207,10 @@
 				F4547EDF24B4EAB000F63465 /* CollectionResultsExtension.swift in Sources */,
 				F47393A224C64C1300B0350B /* QRScannerView.swift in Sources */,
 				F4B7E84D24ACF7F600510C8C /* CollectionViewCell.swift in Sources */,
+				F431321524C75D2800C0014E /* XPathQuery.m in Sources */,
 				F4547EE124B4EDF300F63465 /* CertificationDescriptions.swift in Sources */,
 				F4B7E84F24ACF98A00510C8C /* CollectionResultsViewController.swift in Sources */,
+				F431320F24C75CDF00C0014E /* TFHpple.m in Sources */,
 				F47CE1AF24AA80B90067B657 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,8 +357,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BYE5362W3;
+				"HEADER_SEARCH_PATHS[arch=*]" = $SDKROOT/usr/include/libxml2;
 				INFOPLIST_FILE = GoodBuysNavigation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,6 +369,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OliviaHess.GoodBuysNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoodBuysNavigation/TFHpple/GoodBuysNavigation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -333,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BYE5362W3;
 				INFOPLIST_FILE = GoodBuysNavigation/Info.plist;
@@ -343,6 +391,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = OliviaHess.GoodBuysNavigation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GoodBuysNavigation/TFHpple/GoodBuysNavigation-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
