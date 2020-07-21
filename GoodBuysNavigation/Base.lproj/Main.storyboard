@@ -277,7 +277,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W1i-8d-aJA">
-                                <rect key="frame" x="0.0" y="186" width="375" height="481"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="527"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sq4-n6-h5x">
                                     <size key="itemSize" width="83" height="82"/>
@@ -320,36 +320,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ko-tF-nXM">
-                                <rect key="frame" x="0.0" y="142" width="375" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="7Ko-tF-nXM" firstAttribute="leading" secondItem="PQ7-fj-g7o" secondAttribute="leading" id="0AP-wu-W72"/>
                             <constraint firstItem="MAW-GC-G5A" firstAttribute="trailing" secondItem="PQ7-fj-g7o" secondAttribute="trailing" id="34o-gk-dGg"/>
                             <constraint firstItem="MAW-GC-G5A" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="24" id="4RK-VT-zXy"/>
-                            <constraint firstItem="W1i-8d-aJA" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="122" id="H5S-ap-vkI"/>
+                            <constraint firstItem="W1i-8d-aJA" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="76" id="H5S-ap-vkI"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="bottom" secondItem="PQ7-fj-g7o" secondAttribute="bottom" id="PUT-vO-x2H"/>
-                            <constraint firstItem="7Ko-tF-nXM" firstAttribute="trailing" secondItem="PQ7-fj-g7o" secondAttribute="trailing" id="Sj9-g9-07f"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="bottom" secondItem="PQ7-fj-g7o" secondAttribute="bottom" id="WcA-LT-KEc"/>
-                            <constraint firstItem="W1i-8d-aJA" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="122" id="jcy-J0-uYM"/>
+                            <constraint firstItem="W1i-8d-aJA" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="76" id="jcy-J0-uYM"/>
                             <constraint firstAttribute="trailing" secondItem="W1i-8d-aJA" secondAttribute="trailing" id="nlb-uy-oJn"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="leading" secondItem="PQ7-fj-g7o" secondAttribute="leading" id="o9J-gn-Kng"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="leading" secondItem="PzB-0Z-44A" secondAttribute="leading" id="ukn-Ye-m55"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="trailing" secondItem="PQ7-fj-g7o" secondAttribute="trailing" id="wyk-DD-JKG"/>
                             <constraint firstItem="MAW-GC-G5A" firstAttribute="leading" secondItem="PQ7-fj-g7o" secondAttribute="leading" id="xS5-5J-AhG"/>
-                            <constraint firstItem="7Ko-tF-nXM" firstAttribute="top" secondItem="MAW-GC-G5A" secondAttribute="bottom" constant="25" id="z74-ih-glo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQ7-fj-g7o"/>
                     </view>
                     <navigationItem key="navigationItem" title="CERTIFICATIONS" id="2aa-Vb-oEy"/>
                     <connections>
                         <outlet property="companyName" destination="MAW-GC-G5A" id="XKx-I2-iLp"/>
-                        <outlet property="parentCompanyName" destination="7Ko-tF-nXM" id="FqC-At-VVS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e68-de-93p" userLabel="First Responder" sceneMemberID="firstResponder"/>

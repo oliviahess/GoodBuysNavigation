@@ -19,7 +19,7 @@ class QRScannerViewController: UIViewController, QRScannerViewDelegate {
         guard let collectionCertificationVC = storyboard?.instantiateViewController(withIdentifier: "CollectionCertResults") as? CollectionResultsExtension else {
                 fatalError("Failed to load CollectionResultsExtension from storyboard.")
         }
-  //      collectionCertificationVC.companyName.text = "MY COMPANY2"
+        collectionCertificationVC.companyNameText = "MY COMPANY2"
         
         
         navigationController?.pushViewController(collectionCertificationVC, animated: true)

@@ -13,11 +13,11 @@ class CollectionResultsExtension: CollectionResultsViewController {
     
     @IBOutlet weak var companyName: UILabel!
     
-    @IBOutlet weak var parentCompanyName: UILabel!
+    
+    var companyNameText: String?
     
     override func viewDidLoad() {
-        self.companyName.text = "MY COmpany"
-        self.parentCompanyName.text = "Parent company name"
+        companyName.text = companyNameText
     }
     
 }
