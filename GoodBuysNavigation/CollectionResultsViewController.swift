@@ -96,10 +96,12 @@ class CollectionResultsViewController: UIViewController, UICollectionViewDelegat
     
         certificationVC.certificationText = "This will include the content for the description of the certification"
         certificationVC.certificationImage = images[indexPath.item]
-        let certName = imageString[indexPath.item]
-        var certDescription = CertificationDescriptions().getCertDescription(functionName: certName)
-        certificationVC.certificationText = certDescription
+        let selectedCertification = imageString[indexPath.item]
         
+        var certificationName = CertificationDescriptions().getCertDescription(functionName: selectedCertification)[0]
+        var certificationDescription = CertificationDescriptions().getCertDescription(functionName: selectedCertification)[1]
+        certificationVC.certificationText = certificationDescription
+        certificationVC.certificationName = certificationName
         
         navigationController?.pushViewController(certificationVC, animated: true)
        

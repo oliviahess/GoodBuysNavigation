@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgK-wN-p52">
-                                <rect key="frame" x="132" y="178" width="126" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="Button A"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scan" translatesAutoresizingMaskIntoConstraints="NO" id="hDF-jW-EXf">
                                 <rect key="frame" x="75" y="296" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -190,7 +184,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGr-Gd-L0i">
-                                <rect key="frame" x="67" y="257" width="240" height="313"/>
+                                <rect key="frame" x="67" y="256" width="240" height="313"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
@@ -202,15 +196,14 @@
                                 <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIG-ha-FXX">
-                                <rect key="frame" x="166.5" y="213" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EcoLabel Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YIG-ha-FXX">
+                                <rect key="frame" x="127" y="213" width="121" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8C-p8-CKQ">
-                                <rect key="frame" x="164.5" y="601" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8C-p8-CKQ">
+                                <rect key="frame" x="176.5" y="600" width="22" height="31"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KA1-OD-9Xx">
                                 <rect key="frame" x="145" y="105" width="85" height="84"/>
@@ -239,6 +232,7 @@
                     <navigationItem key="navigationItem" title="CERTIFICATIONS" id="Phm-ee-fs8"/>
                     <connections>
                         <outlet property="certificationImageView" destination="KA1-OD-9Xx" id="nfy-EX-8xu"/>
+                        <outlet property="certificationNameLabel" destination="YIG-ha-FXX" id="H1z-Ch-vSi"/>
                         <outlet property="certificationTextView" destination="yGr-Gd-L0i" id="5is-gq-1ba"/>
                     </connections>
                 </viewController>
@@ -250,7 +244,7 @@
         <scene sceneID="LSr-kJ-v0U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ur2-1H-lW3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="EcoLabels" id="Rp1-hL-bgh">
+                    <tabBarItem key="tabBarItem" title="EcoLabels" selectedImage="scores" id="Rp1-hL-bgh">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
                     <toolbarItems/>
@@ -277,7 +271,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="W1i-8d-aJA">
-                                <rect key="frame" x="0.0" y="140" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="174" width="375" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="sq4-n6-h5x">
                                     <size key="itemSize" width="83" height="82"/>
@@ -315,20 +309,20 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAW-GC-G5A">
-                                <rect key="frame" x="0.0" y="88" width="375" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="0.0" y="101" width="375" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" red="0.64705882349999999" green="0.14117647059999999" blue="0.23137254900000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="MAW-GC-G5A" firstAttribute="trailing" secondItem="PQ7-fj-g7o" secondAttribute="trailing" id="34o-gk-dGg"/>
-                            <constraint firstItem="MAW-GC-G5A" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="24" id="4RK-VT-zXy"/>
-                            <constraint firstItem="W1i-8d-aJA" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="76" id="H5S-ap-vkI"/>
+                            <constraint firstItem="MAW-GC-G5A" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="37" id="4RK-VT-zXy"/>
+                            <constraint firstItem="W1i-8d-aJA" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="110" id="H5S-ap-vkI"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="bottom" secondItem="PQ7-fj-g7o" secondAttribute="bottom" id="PUT-vO-x2H"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="bottom" secondItem="PQ7-fj-g7o" secondAttribute="bottom" id="WcA-LT-KEc"/>
-                            <constraint firstItem="W1i-8d-aJA" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="76" id="jcy-J0-uYM"/>
+                            <constraint firstItem="W1i-8d-aJA" firstAttribute="top" secondItem="PQ7-fj-g7o" secondAttribute="top" constant="110" id="jcy-J0-uYM"/>
                             <constraint firstAttribute="trailing" secondItem="W1i-8d-aJA" secondAttribute="trailing" id="nlb-uy-oJn"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="leading" secondItem="PQ7-fj-g7o" secondAttribute="leading" id="o9J-gn-Kng"/>
                             <constraint firstItem="W1i-8d-aJA" firstAttribute="leading" secondItem="PzB-0Z-44A" secondAttribute="leading" id="ukn-Ye-m55"/>
@@ -387,5 +381,6 @@
     </scenes>
     <resources>
         <image name="scan" width="980" height="980"/>
+        <image name="scores" width="51" height="57"/>
     </resources>
 </document>

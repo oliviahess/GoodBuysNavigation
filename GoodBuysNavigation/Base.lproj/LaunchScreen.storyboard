@@ -30,12 +30,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="GoodBuys" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-ct-kjM">
-                                <rect key="frame" x="161" y="608" width="53" height="39"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="Dtx-a5-qdW"/>
-                                    <constraint firstAttribute="width" constant="53" id="FzM-3K-eOM"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" image="GoodBuys" translatesAutoresizingMaskIntoConstraints="NO" id="rtf-ct-kjM">
+                                <rect key="frame" x="166" y="611" width="42" height="36"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.70196078431372544" green="0.027450980392156862" blue="0.2196078431372549" alpha="1" colorSpace="calibratedRGB"/>
@@ -43,15 +39,14 @@
                             <constraint firstItem="BmF-Vg-qRn" firstAttribute="top" secondItem="7oh-Zm-Ebw" secondAttribute="bottom" constant="17" id="1o8-gZ-aFj"/>
                             <constraint firstItem="BmF-Vg-qRn" firstAttribute="top" secondItem="7oh-Zm-Ebw" secondAttribute="bottom" constant="17" id="380-1L-Lpa"/>
                             <constraint firstItem="7oh-Zm-Ebw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="190" id="3O1-Ip-ziZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rtf-ct-kjM" secondAttribute="trailing" constant="161" id="Ja7-Gv-tfi"/>
+                            <constraint firstItem="rtf-ct-kjM" firstAttribute="top" secondItem="BmF-Vg-qRn" secondAttribute="bottom" constant="284" id="BAb-yc-cDT"/>
                             <constraint firstItem="7oh-Zm-Ebw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ud0-h9-qci"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rtf-ct-kjM" secondAttribute="bottom" constant="20" id="VJc-gQ-ysG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rtf-ct-kjM" secondAttribute="bottom" constant="20" id="ZuT-Kf-sgC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rtf-ct-kjM" secondAttribute="trailing" constant="167" id="aEd-Id-Xiv"/>
                             <constraint firstItem="BmF-Vg-qRn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ai0-yX-Q3A"/>
-                            <constraint firstItem="rtf-ct-kjM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="161" id="oOp-BH-EDF"/>
-                            <constraint firstItem="rtf-ct-kjM" firstAttribute="top" secondItem="BmF-Vg-qRn" secondAttribute="bottom" constant="281" id="qTR-VV-F0c"/>
                             <constraint firstItem="7oh-Zm-Ebw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qzm-dE-Z3y"/>
+                            <constraint firstItem="rtf-ct-kjM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="166" id="sxu-51-L6n"/>
                             <constraint firstItem="BmF-Vg-qRn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uNv-8V-iwA"/>
-                            <constraint firstItem="rtf-ct-kjM" firstAttribute="top" secondItem="BmF-Vg-qRn" secondAttribute="bottom" constant="281" id="zD6-Sm-ZKs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -62,6 +57,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="GoodBuys" width="138" height="102"/>
+        <image name="GoodBuys" width="53" height="36"/>
     </resources>
 </document>

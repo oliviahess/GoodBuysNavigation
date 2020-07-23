@@ -15,11 +15,15 @@ class CertificationResultsViewController: UIViewController {
     
     @IBOutlet weak var certificationTextView: UITextView!
     
+    @IBOutlet weak var certificationNameLabel: UILabel!
+    
     var certificationText: String?
+    var certificationName: String?
     var certificationImage: UIImage?
     
     override func viewWillAppear(_ animated: Bool) {
         certificationTextView.text = certificationText
+        certificationNameLabel.text = certificationName
         certificationImageView.image = certificationImage
     }
     
